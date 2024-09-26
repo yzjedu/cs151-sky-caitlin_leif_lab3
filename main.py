@@ -30,7 +30,7 @@ else:
 time_in_air = math.sqrt((2*jump_height)/9.8)
 
 # requests the speed of the jumper from the user
-jumper_speed = float(input("How fast are you going during the jump? "))
+jumper_speed = float(input("How fast are you going during the jump in meters per second? "))
 
 # calculates the forward distance travelled by the jumper
 jumper_distance = jumper_speed * time_in_air
@@ -39,7 +39,7 @@ jumper_distance = jumper_speed * time_in_air
 jumper_points = 60 + (jumper_distance - par_distance) * points_per_meter
 
 # outputs the distance jumped forward and the points awarded
-print(f'You jumped forward {jumper_distance} units and earned {jumper_points} points')
+print(f'You jumped forward {jumper_distance} meters and earned {jumper_points} points')
 
 # outputs an approving, confused, or consoling phrase given the point count
 if jumper_points > 60:
